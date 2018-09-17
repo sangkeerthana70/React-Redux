@@ -1,0 +1,4 @@
+React is a Js library developed by facebook. It is used to create JS-driven dynamic apps(websites).
+It is compared to Angular and vue.
+REDUX
+It is a layer on top of REACT.
