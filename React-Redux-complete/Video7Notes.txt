@@ -1,0 +1,1 @@
+Whenever the state of the component changes that component is going to re-render the template to the DOM to reflect that change in the browser.
