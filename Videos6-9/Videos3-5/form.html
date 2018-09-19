@@ -10,6 +10,7 @@
 </head>
 <body>
     <div id = "app"></div>
+
     <script type="text/babel"> 
         class App extends React.Component {
             state = {
@@ -17,13 +18,21 @@
                 age: 35,
                profession: 'Doctor'
             }
+
+            handleChange = (e) =>
+            {
+                this.setState({
+                    name: e.target.value
+                })
+            }
  
             render() {
                 return (
                     <div className="app-content">
                         <h1>My name is: {this.state.name}</h1>
                         <form> 
-                            <input type = "text" > </input>
+                            <input type = "text" onChange= {this.handleChange}/> 
+                            <button>Submit</button>
                         </form>
                     </div>
 
