@@ -1,1 +1,5 @@
 Whenever the state of the component changes that component is going to re-render the template to the DOM to reflect that change in the browser.
+
+This keyword within render method represents the currentan instance of the App class by which we can access all methods and variables of the App class.
+
+The arrow functions have a special behavior when it comes to this keyword. They bind the value of this(inside the function) to whatever this is outside the function. Whatever the value of this is outside the handleClick function is the component instance which is then bound to the methods by the arrow functions. 

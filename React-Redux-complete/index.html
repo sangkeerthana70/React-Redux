@@ -14,11 +14,20 @@
         class App extends React.Component {
             state = {
                 name: 'Crystal',
-                age: 35
+                age: 35,
+               profession: 'Doctor'
             }
-            handleClick(e)
+            handleClick = (e) =>
             {
-                console.log(e.target);
+                //console.log(e.target)
+                console.log(this.state);
+
+                this.setState({
+                    name: 'Yoshi',
+                    age: 25,
+                    profession: 'jornalist'
+                })
+
             }
             handleMouseOver(e)
             {
@@ -34,6 +43,7 @@
                         <h1>Hey, Ninjas</h1>
                         <p>{Math.random() * 10}</p>
                         <p>My name is : { this.state.name } and I am: { this.state.age }</p>
+                        <p>I am a: { this.state.profession }</p>
                         <button onClick = {this.handleClick}>Click Me</button> 
                         <button onMouseOver = {this.handleMouseOver}>Hover Me</button>
                         <p onCopy = {this.handleCopy}>What we think, we become</p>
