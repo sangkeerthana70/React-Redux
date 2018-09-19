@@ -16,4 +16,6 @@ Intro to forms
 Since all websites have user inputs in some way, shape or form we are going to see how to create a form and get the UI data using react. 
 1-We have deleted the components from the html template that we created in previous videos . The state remains the same as before and the output of the state is displayed in the <h1> tag.
 2-to create a form enclose a <form> tag that takes in a single user input (their name) and updates the state on the fly where we output it as they type in. On click of the submit button it will log their name on the console.
-3.add an event to the form tag that handles the event when there is change to the input text box.
+3.add an event called onChange to the <input> tag that handles the event when there is change to the input text box as the user enters or deletes a value.
+4. add an onSubmit event handler to the <form> tag to handle the event when the user  hits enter or submits the input value.
+Add a method called handleSubmit to do the submit operation inside it that handles the onSubmit event.

@@ -25,12 +25,19 @@
                     name: e.target.value
                 })
             }
+            handleSubmit = (e) =>
+            {
+                //prevent page from being refreshed
+                e.preventDefault();
+                //log current state.name to the console
+                console.log('form submitted', this.state.name) 
+            }
  
             render() {
                 return (
                     <div className="app-content">
                         <h1>My name is: {this.state.name}</h1>
-                        <form> 
+                        <form onSubmit = { this.handleSubmit }> 
                             <input type = "text" onChange= {this.handleChange}/> 
                             <button>Submit</button>
                         </form>
