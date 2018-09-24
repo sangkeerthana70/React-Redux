@@ -23,7 +23,16 @@ class App extends Component {
   }
 
   deleteNinja = (id) => {
-    console.log(id);
+    //console.log(id);
+
+    //filter() is a non-destructive method that does not alter the array in the state directly 
+    //but just returns a new array and stores in the variable below
+    let ninjas = this.state.ninjas.filter(ninja => {
+      return ninja.id !== id;
+    });
+    this.setState({
+      ninjas: ninjas
+    })
   }
   render() {
     return (
