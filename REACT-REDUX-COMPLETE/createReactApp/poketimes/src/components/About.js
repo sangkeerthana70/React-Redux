@@ -1,16 +1,18 @@
-import React from 'react'
+import React from "react";
+import Rainbow from "../hoc/Rainbow";
 
 const About = () => {
-    return (
-        <div className="container">
-            <h4 className="center">About</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero et, nihil sapiente,
-             enim inventore sequi perferendis dolorum, modi eveniet voluptate repudiandae reprehenderit!
-              Beatae, aut? Placeat quia voluptates autem nam numquam.
-            </p>
+  return (
+    <div className="container">
+      <h4 className="center">About</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero et,
+        nihil sapiente, enim inventore sequi perferendis dolorum, modi eveniet
+        voluptate repudiandae reprehenderit! Beatae, aut? Placeat quia
+        voluptates autem nam numquam.
+      </p>
+    </div>
+  );
+};
 
-        </div>
-    )
-}
-
-export default About
+export default Rainbow(About);
